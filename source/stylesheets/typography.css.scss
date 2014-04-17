@@ -1,0 +1,18 @@
+body{
+	font-family: $serif;
+}
+h1{
+	font-family: $sans-serif;
+	font-size: 28px;
+	line-height: 40px;
+	color: $white;
+	font-weight: $regular;
+}
+h2{
+	font-size: 18px;
+	line-height: 28px;
+	color: $blue-muted;
+	font-weight: $regular;
+
+	margin-top: 0;
+}
