@@ -14,7 +14,11 @@ a{
 
 p{
 	a{
-		color: $white !important;
+		padding-bottom: 2px;
+		&:hover{
+			color: $white;
+			border-bottom: 2px solid $white;
+		}
 	}
 }
 
@@ -24,9 +28,22 @@ p{
 	padding: 60px;
 	.header{
 		display: inline-block;
-		.lead, p{
-			margin: 0;
-			@include col(1/2);
+		&:before{
+			content: "";
+			background: url("/images/general/squiggle-long.png");
+			background: url("/images/general/squiggle-long.svg"), none;
+			background-repeat: no-repeat;
+			width: 122px;
+			height: 6px;
+			display: block;
+			margin: 80px auto;
+		}
+		&:first-child{
+			&:before{
+				display: none;
+			}
+		}
+		.lead{
 			a{
 				color: $red;
 				padding-bottom: 2px;
@@ -35,6 +52,10 @@ p{
 					border-bottom: 2px solid $white;
 				}
 			}
+		}
+		.lead, .description{
+			margin: 0;
+			@include col(1/2);
 			p{
 				font-family: $sans-serif;
 			}
