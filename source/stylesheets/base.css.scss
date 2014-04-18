@@ -4,12 +4,17 @@ body{
 
 a{
 	text-decoration: none;
-	color: $red;
-	padding-bottom: 4px;
+	color: $white;
 	@include transition(0.2s);
 
 	&:hover{
-		border-bottom: 2px solid $white;
+		color: $red;
+	}
+}
+
+p{
+	a{
+		color: $white !important;
 	}
 }
 
@@ -17,13 +22,52 @@ a{
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 60px;
-	.intro{
-		h1, h2{
+	.header{
+		display: inline-block;
+		.lead, p{
 			margin: 0;
 			@include col(1/2);
 			a{
+				color: $red;
 				padding-bottom: 2px;
+				&:hover{
+					color: $red;
+					border-bottom: 2px solid $white;
+				}
 			}
+			p{
+				font-family: $sans-serif;
+			}
+		}
+		.lead-work{
+			a{
+				&:after{
+					content: " →";
+					display: inline;
+					@include transition(0.2s);
+				}
+				&:hover{
+					border-bottom: none;
+					&:after{
+						margin-left: 10px;
+					}
+				}
+			}
+			&:after{
+				content: "";
+				display: block;
+				background: $white;
+				width: 50px;
+				height: 2px;
+				margin: 20px 0;
+			}
+		}
+	}
+	.portfolio{
+		margin-top: 50px;
+		img{
+			width: 100%;
+			margin-top: 10px;
 		}
 	}
 }
@@ -36,8 +80,15 @@ nav{
 	a.logo{
 		float: left;
 		&:hover{
-			border-bottom: 0;
 			opacity: .6;
+			border-bottom: none;
+		}
+	}
+	a{
+		padding-bottom: 4px;
+		&:hover{
+			color: $white;
+			border-bottom: 2px solid $white;
 		}
 	}
 	ul{
@@ -57,10 +108,9 @@ nav{
 	}
 }
 .thumbnails{
-	margin-top: 180px;
+	margin-top: 160px;
 	a.thumb{
 		position: relative;
-		padding-bottom: 0;
 		@include span(1/3);
 		img{
 			width: 100%;

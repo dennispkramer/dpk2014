@@ -9,6 +9,8 @@ h1{
 	line-height: 40px;
 	color: $white;
 	font-weight: $regular;
+	margin-top: 0;
+	margin-bottom: 10px;
 }
 
 h2{
@@ -22,8 +24,8 @@ h2{
 
 	&:after{
 		content: "";
-		background: url("/images/squiggle.png");
-		background: url("/images/squiggle.svg"), none;
+		background: url("/images/general/squiggle.png");
+		background: url("/images/general/squiggle.svg"), none;
 		background-repeat: no-repeat;
 		width: 62px;
 		height: 6px;
