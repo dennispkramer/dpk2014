@@ -23,9 +23,10 @@ h2{
 	&:after{
 		content: "";
 		background: url("/images/squiggle.png");
+		background: url("/images/squiggle.svg"), none;
 		background-repeat: no-repeat;
 		width: 62px;
-		height: 10px;
+		height: 6px;
 		display: block;
 		margin: 30px auto;
 	}
@@ -36,7 +37,6 @@ h3{
 	line-height: 28px;
 	color: $white;
 	font-weight: $regular;
-	text-align: center;
 }
 
 p{

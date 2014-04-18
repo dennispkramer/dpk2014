@@ -68,18 +68,39 @@ nav{
 			opacity: .4;
 			@include transition(0.2s);
 		}
-		.thumb-header{
+		.overlay{
 			position: absolute;
-			display: inline;
-			width: 100%;
-			top: 44%;
+			text-align: center;
+			width: 90%;
+			height: auto;
+			display: table;
+			top: 0;
+			bottom: 0;
+			padding: 5%;
+			margin: auto;
+		}
+		p{
+			font-family: $sans-serif;
+			color: $white;
+			margin-bottom: 0;
+		}
+		h3{
+			margin-top: 0;
+			&:after{
+				content: "";
+				display: block;
+				background: $white;
+				width: 50px;
+				height: 2px;
+				margin: 20px auto;
+			}
 		}
 		&:hover{
 			border-bottom: none;
 			img{
 				opacity: 1;
 			}
-			.thumb-header{
+			.overlay{
 				display: none;
 			}
 		}
