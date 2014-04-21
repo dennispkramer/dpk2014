@@ -35,7 +35,7 @@ p{
 	margin-top: 88px;
 	padding: 60px;
 	.header{
-		padding: 61px 50px;
+		padding: 81px 70px;
 		display: inline-block;
 		background: url("/images/general/top-left.png"), 
 								url("/images/general/center.png"), 
@@ -43,6 +43,12 @@ p{
 								url("/images/general/bot-left.png"), 
 								url("/images/general/center.png"), 
 								url("/images/general/bot-right.png");
+		background: url("/images/general/top-left.svg"), 
+								url("/images/general/center.svg"), 
+								url("/images/general/top-right.svg"), 
+								url("/images/general/bot-left.svg"), 
+								url("/images/general/center.svg"), 
+								url("/images/general/bot-right.svg"), none;
 		background-position:  left top 11px,
 													center top,
 													right top 11px,
