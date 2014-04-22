@@ -17,6 +17,43 @@ p{
 		padding-bottom: 2px;
 	}
 }
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	margin-bottom: 88px;
+	background: rgba($red, .9);
+	.nav-container{
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 20px 60px;
+	}
+	a.logo{
+		float: left;
+		&:hover{
+			opacity: .6;
+			border-bottom: none;
+		}
+	}
+	ul{
+		list-style: none;
+		text-align: right;
+		padding: 0;
+		li{
+			display: inline;
+			margin-left: 40px;
+			a{
+				padding-bottom: 4px;
+				color: $white;
+			}
+			&:first-child{
+				margin-left: 0;
+			}
+		}
+	}
+}
 .cover-image{
 	position: absolute;
 	z-index: -5;
@@ -38,10 +75,12 @@ p{
 		display: inline-block;
 		.lead, .description{
 			margin: 0;
-			@include col(1/2);
 		}
 	}
 	.intro{
+		.lead, .description{
+			@include col(1/2);
+		}
 		position: relative;
 		padding: 81px 70px;
 		background: url("/images/general/top-left.png"), 
@@ -86,6 +125,12 @@ p{
 		}
 	}
 	.portfolio{
+		.lead{
+			@include col(1/3);
+		}
+		.description{
+			@include col(2/3);
+		}
 		&:before{
 			content: "";
 			background: url("/images/general/squiggle-long.png");
@@ -137,43 +182,6 @@ p{
 	}
 }
 
-nav{
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 100;
-	margin-bottom: 88px;
-	background: $red;
-	.nav-container{
-		max-width: 1200px;
-		margin: 0 auto;
-		padding: 20px 60px;
-	}
-	a.logo{
-		float: left;
-		&:hover{
-			opacity: .6;
-			border-bottom: none;
-		}
-	}
-	ul{
-		list-style: none;
-		text-align: right;
-		padding: 0;
-		li{
-			display: inline;
-			margin-left: 40px;
-			a{
-				padding-bottom: 4px;
-				color: $white;
-			}
-			&:first-child{
-				margin-left: 0;
-			}
-		}
-	}
-}
 .thumbnails{
 	margin-top: 80px;
 	a.thumb{
