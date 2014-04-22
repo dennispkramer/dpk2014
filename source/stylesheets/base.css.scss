@@ -199,6 +199,7 @@ nav{
 	}
 	.contact{
 		text-align: center;
+		margin-top: 200px;
 		.lead{
 			position: relative;
 			&:after{
@@ -212,17 +213,23 @@ nav{
 				height: 44px;
 				left: 50%;
 				margin-left: -102px;
-				margin-top: 20px;
+				margin-top: 15px;
 			}
 		}
-		p{
-			margin-top: 80px;
-		}
 		ul{
+			margin-top: 85px;
 			li{
 				margin-left: 40px;
 				&:first-child{
 					margin-left: 0;
+				}
+				a{
+					color: $white;
+					font-size: 30px;
+				}
+				a:hover{
+					border-bottom: none;
+					opacity: .4;
 				}
 			}
 		}
@@ -275,7 +282,15 @@ nav{
 				opacity: 1;
 			}
 			.overlay{
-				display: none;
+				margin-top: 10px;
+				h3{
+					&:after{
+						display: none;
+					}
+				}
+				p{
+					display: none;
+				}
 			}
 		}
 	}
