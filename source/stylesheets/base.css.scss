@@ -34,9 +34,15 @@ p{
 	margin: 0 auto;
 	margin-top: 88px;
 	padding: 60px;
-	.header{
-		padding: 81px 70px;
+	.intro, .portfolio{
 		display: inline-block;
+		.lead, .description{
+			margin: 0;
+			@include col(1/2);
+		}
+	}
+	.intro{
+		padding: 81px 70px;
 		background: url("/images/general/top-left.png"), 
 								url("/images/general/center.png"), 
 								url("/images/general/top-right.png"), 
@@ -57,6 +63,8 @@ p{
 													right bottom 11px;
 
 		background-repeat: no-repeat;
+	}
+	.portfolio{
 		&:before{
 			content: "";
 			background: url("/images/general/squiggle-long.png");
@@ -72,14 +80,7 @@ p{
 				display: none;
 			}
 		}
-		.lead, .description{
-			margin: 0;
-			@include col(1/2);
-			p{
-				font-family: $sans-serif;
-			}
-		}
-		.lead-work{
+		.lead{
 			a{
 				&:after{
 					content: " →";
@@ -93,17 +94,20 @@ p{
 					}
 				}
 			}
-			&:after{
-				content: "";
-				display: block;
-				background: $white;
-				width: 50px;
-				height: 2px;
-				margin: 20px 0;
+			p{
+				font-family: $sans-serif;
+				&:before{
+					content: "";
+					display: block;
+					background: $white;
+					width: 50px;
+					height: 2px;
+					margin: 20px 0;
+				}
 			}
 		}
 	}
-	.portfolio{
+	.portfolio-images{
 		margin-top: 50px;
 		img{
 			width: 100%;
