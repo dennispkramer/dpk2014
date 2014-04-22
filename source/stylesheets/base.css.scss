@@ -12,6 +12,14 @@ a{
 	}
 }
 
+ul{
+	list-style: none;
+	padding: 0;
+	li{
+		display: inline;
+	}
+}
+
 p{
 	a{
 		padding-bottom: 2px;
@@ -38,11 +46,8 @@ nav{
 		}
 	}
 	ul{
-		list-style: none;
 		text-align: right;
-		padding: 0;
 		li{
-			display: inline;
 			margin-left: 40px;
 			a{
 				padding-bottom: 4px;
@@ -54,17 +59,26 @@ nav{
 		}
 	}
 }
-.cover-image{
-	position: absolute;
+.background-index, .background-contact{
+	position: fixed;
 	z-index: -5;
 	width: 100%;
 	top: 0;
 	bottom: 0;
-	background: url("/images/general/background.jpg") no-repeat top center;
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+}
+.background-index{
+		background: url("/images/general/background.jpg") no-repeat top center;
+		-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+}
+.background-contact{
+		background: url("/images/general/background-contact.jpg") no-repeat top center;
+		-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
 }
 .container{
 	max-width: 1200px;
@@ -162,12 +176,15 @@ nav{
 			}
 			p{
 				font-family: $sans-serif;
+				font-size: 18px;
 				&:before{
 					content: "";
+					background: url("/images/general/squiggle.png");
+					background: url("/images/general/squiggle.svg"), none;
+					background-repeat: no-repeat;
+					width: 62px;
+					height: 6px;
 					display: block;
-					background: $white;
-					width: 50px;
-					height: 2px;
 					margin: 20px 0;
 				}
 			}
@@ -178,6 +195,36 @@ nav{
 		img{
 			width: 100%;
 			margin-top: 10px;
+		}
+	}
+	.contact{
+		text-align: center;
+		.lead{
+			position: relative;
+			&:after{
+				content: "";
+				display: block;
+				background: url("/images/general/center.png");
+				background: url("/images/general/center.svg"), none;
+				background-repeat: no-repeat;
+				position: absolute;
+				width: 203px;
+				height: 44px;
+				left: 50%;
+				margin-left: -102px;
+				margin-top: 20px;
+			}
+		}
+		p{
+			margin-top: 80px;
+		}
+		ul{
+			li{
+				margin-left: 40px;
+				&:first-child{
+					margin-left: 0;
+				}
+			}
 		}
 	}
 }
@@ -207,6 +254,7 @@ nav{
 		}
 		p{
 			font-family: $sans-serif;
+			font-size: 18px;
 			color: $white;
 			margin-bottom: 0;
 		}
