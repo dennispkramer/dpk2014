@@ -22,6 +22,21 @@ $bold: 600;
   				border-radius: $radius;
 }
 
+@mixin blur($blur) {
+	-webkit-filter: blur($blur);
+		 -moz-filter: blur($blur);
+		  -ms-filter: blur($blur);
+		   -o-filter: blur($blur);
+		      filter: blur($blur);
+}
+// USE THIS WITH BLUR TO FORCE HARDWEARE ACCELERATION
+@mixin translate3d($x, $y, $z) {
+  -webkit-transform: translate3d($x, $y, $z);
+     -moz-transform: translate3d($x, $y, $z);
+       -o-transform: translate3d($x, $y, $z);
+          transform: translate3d($x, $y, $z);
+}
+
 @mixin transition($transition) {
 	-webkit-transition: all $transition;
    	 -moz-transition: all $transition;
