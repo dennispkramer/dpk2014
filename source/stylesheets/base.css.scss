@@ -100,7 +100,6 @@ nav{
 	}
 	.feature{
 		@include span(1/2);
-		padding: 60px 0;
 		background: url("/images/general/feature-index.jpg") no-repeat center;
 	}
 }

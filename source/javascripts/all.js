@@ -14,7 +14,7 @@ $(document).ready(function() {
 });
 
 function setHeight(elem1, elem2, elem3) {
-  var height = elem1.height()
+  var height = elem1.height() + 120
   var doubleheight = 2 * height
   // sets height of element 2 equal to the height of element 1
   elem2.css('height', height);
