@@ -16,6 +16,14 @@ $light: 100;
 $regular: 400;
 $bold: 600;
 
+// Floats
+.left{
+  float: left !important;
+}
+.right{
+  float: right !important;
+}
+
 // Mixins
 @mixin border-radius($radius) {
 	-webkit-border-radius: $radius;

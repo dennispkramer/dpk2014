@@ -66,7 +66,7 @@ nav{
 		}
 	}
 }
-.background-index, .background-contact{
+.background-contact{
 	position: fixed;
 	z-index: -5;
 	width: 100%;
@@ -82,20 +82,27 @@ nav{
 }
 .intro{
 	display: block;
+	.lead, .description, .feature, .feature2{
+		@include span(1/2);
+	}
 	.lead, .description{
 		margin: 0;
-		@include span(1/2);
 		box-sizing: border-box;
 		padding: 60px;
 	}
 	.lead{
-		background: url("/images/general/background-index.jpg") no-repeat center;
 		font-weight: 100;
 		font-size: 36px;
 		line-height: 46px;
 		a{
 			padding-bottom: 4px;
 		}
+	}
+	.lead1{
+		background: url("/images/general/background-index.jpg") no-repeat center;
+	}
+	.lead2{
+		background: url("/images/general/background-index2.jpg") no-repeat center;
 	}
 	.description{
 		background: $tan;
@@ -122,8 +129,10 @@ nav{
 		}
 	}
 	.feature{
-		@include span(1/2);
 		background: url("/images/general/feature-index.jpg") no-repeat center;
+	}
+	.feature2{
+		background: url("/images/general/feature-index2.jpg") no-repeat center;
 	}
 }
 .portfolio, .contact{
