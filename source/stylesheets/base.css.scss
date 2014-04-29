@@ -87,8 +87,11 @@ nav{
 		background: url("/images/general/background-index.jpg") no-repeat top center;
 	}
 	.description{
-		background: $blue-muted;
-		color: $blue-light;
+		background: $tan;
+		color: $tan-muted;
+	}
+	.feature{
+		@include span(1/2);
 	}
 }
 .intro, .portfolio, .contact, .thumbnails{
