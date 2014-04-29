@@ -13,7 +13,7 @@ a{
 	@include transition(0.2s);
 
 	&:hover{
-		border-bottom: 2px solid $white;
+		border-bottom: 2px solid $blue-highlight;
 	}
 }
 
@@ -56,6 +56,9 @@ nav{
 			a{
 				padding-bottom: 4px;
 				color: $white;
+				&:hover{
+					border-bottom: 2px solid $white;
+				}
 			}
 			&:first-child{
 				margin-left: 0;
@@ -96,7 +99,27 @@ nav{
 	}
 	.description{
 		background: $tan;
-		color: $tan-muted;
+		p{
+			color: $tan-muted;
+		}
+		.inner{
+			margin: -51px -40px;
+			padding: 51px 40px;
+			background: url("/images/general/ornament-index/top-left.png"), 
+									url("/images/general/ornament-index/top-right.png"), 
+									url("/images/general/ornament-index/bot-left.png"), 
+									url("/images/general/ornament-index/bot-right.png");
+			background: url("/images/general/ornament-index/top-left.svg"), 
+									url("/images/general/ornament-index/top-right.svg"), 
+									url("/images/general/ornament-index/bot-left.svg"), 
+									url("/images/general/ornament-index/bot-right.svg"), none;
+			background-position:  left top 11px,
+														right top 11px,
+														left bottom 11px,
+														right bottom 11px;
+
+			background-repeat: no-repeat;
+		}
 	}
 	.feature{
 		@include span(1/2);
@@ -178,18 +201,18 @@ nav{
 		}
 		position: relative;
 		padding: 81px 70px;
-		background: url("/images/general/top-left.png"), 
-								url("/images/general/center.png"), 
-								url("/images/general/top-right.png"), 
-								url("/images/general/bot-left.png"), 
-								url("/images/general/center.png"), 
-								url("/images/general/bot-right.png");
-		background: url("/images/general/top-left.svg"), 
-								url("/images/general/center.svg"), 
-								url("/images/general/top-right.svg"), 
-								url("/images/general/bot-left.svg"), 
-								url("/images/general/center.svg"), 
-								url("/images/general/bot-right.svg"), none;
+		background: url("/images/general/ornament-contact/top-left.png"), 
+								url("/images/general/ornament-contact/center.png"), 
+								url("/images/general/ornament-contact/top-right.png"), 
+								url("/images/general/ornament-contact/bot-left.png"), 
+								url("/images/general/ornament-contact/center.png"), 
+								url("/images/general/ornament-contact/bot-right.png");
+		background: url("/images/general/ornament-contact/top-left.svg"), 
+								url("/images/general/ornament-contact/center.svg"), 
+								url("/images/general/ornament-contact/top-right.svg"), 
+								url("/images/general/ornament-contact/bot-left.svg"), 
+								url("/images/general/ornament-contact/center.svg"), 
+								url("/images/general/ornament-contact/bot-right.svg"), none;
 		background-position:  left top 11px,
 													center top,
 													right top 11px,

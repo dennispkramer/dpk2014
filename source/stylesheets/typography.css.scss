@@ -47,6 +47,9 @@ p{
 	line-height: 30px;
 	color: $blue-muted;
 	font-weight: $regular;
-
-	margin-top: 0;
+	
+	margin: 20px 0 0 0;
+	&:first-child{
+		margin-top: 0;
+	}
 }
