@@ -78,7 +78,6 @@ nav{
 	  background-size: cover;
 }
 .intro{
-	height: 520px;
 	display: block;
 	.lead, .description{
 		margin: 0;
@@ -87,7 +86,6 @@ nav{
 		padding: 60px;
 	}
 	.lead{
-		height: 100%;
 		background: url("/images/general/background-index.jpg") no-repeat center;
 		font-weight: 100;
 		font-size: 36px;
@@ -97,13 +95,12 @@ nav{
 		}
 	}
 	.description{
-		height: 50%;
 		background: $tan;
 		color: $tan-muted;
 	}
 	.feature{
-		height: 50%;
 		@include span(1/2);
+		padding: 60px 0;
 		background: url("/images/general/feature-index.jpg") no-repeat center;
 	}
 }
