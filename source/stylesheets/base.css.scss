@@ -91,7 +91,7 @@ nav{
 }
 .intro{
 	display: block;
-	.lead, .description, .feature, .feature2{
+	.lead, .description, .feature{
 		@include span(1/2);
 	}
 	.lead, .description{
@@ -103,15 +103,10 @@ nav{
 		font-weight: 100;
 		font-size: 36px;
 		line-height: 46px;
+		background: url("/images/general/background-index.jpg") no-repeat center;
 		a{
 			padding-bottom: 4px;
 		}
-	}
-	.lead1{
-		background: url("/images/general/background-index.jpg") no-repeat center;
-	}
-	.lead2{
-		background: url("/images/general/background-index2.jpg") no-repeat center;
 	}
 	.description{
 		background: $tan;
@@ -141,8 +136,25 @@ nav{
 	.feature{
 		background: url("/images/general/feature-index.jpg") no-repeat center;
 	}
-	.feature2{
-		background: url("/images/general/feature-index2.jpg") no-repeat center;
+	.gallery{
+		height: 500px;
+		width: 100%;
+		display: inline-flex;
+		.a, .b, .c, .d{
+			@include span(1/4);
+		}
+		.a{
+			background: url("/images/general/a-index.jpg") no-repeat center;
+		}
+		.b{
+			background: url("/images/general/b-index.jpg") no-repeat center;
+		}
+		.c{
+			background: url("/images/general/c-index.jpg") no-repeat center;
+		}
+		.d{
+			background: url("/images/general/d-index.jpg") no-repeat center;
+		}
 	}
 }
 .portfolio, .contact{
