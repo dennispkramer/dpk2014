@@ -164,6 +164,7 @@ nav{
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 60px;
+	box-sizing: border-box;
 	.portfolio{
 		.lead{
 			@include col(1/3);
