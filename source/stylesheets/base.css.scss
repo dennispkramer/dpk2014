@@ -84,10 +84,6 @@ nav{
 }
 .background-contact{
 		background: url("/images/general/background-index.jpg") no-repeat top center;
-		-webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
 }
 .intro{
 	display: block;
@@ -136,12 +132,13 @@ nav{
 	.feature{
 		background: url("/images/general/feature-index.jpg") no-repeat center;
 	}
-	.gallery{
-		height: 500px;
+	#gallery{
 		width: 100%;
-		display: inline-flex;
+		display: inline-block;
+		margin-bottom: -4px;
 		.a, .b, .c, .d{
 			@include span(1/4);
+			height: 100%;
 		}
 		.a{
 			background: url("/images/general/a-index.jpg") no-repeat center;

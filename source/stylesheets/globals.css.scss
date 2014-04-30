@@ -6,7 +6,7 @@ $red-muted:         #faa2a2;
 $blue-muted:		    #55606a;
 $blue-highlight:		#4c9de7;
 $tan:               #ecccb5;
-$tan-muted:         #c6ab98;
+$tan-muted:         #c3a895;
 
 // Fonts
 $serif: "Calendas Plus", georgia, times, serif;
@@ -23,6 +23,14 @@ $bold: 600;
 }
 .right{
   float: right !important;
+}
+
+// Image Cover
+.cover{
+  -webkit-background-size: cover !important;
+     -moz-background-size: cover !important;
+       -o-background-size: cover !important;
+          background-size: cover !important;
 }
 
 // Mixins
