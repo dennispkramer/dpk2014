@@ -27,7 +27,13 @@ ul{
 
 p{
 	a{
+		color: $blue-muted;
+		border-bottom: 2px solid $blue-muted;
 		padding-bottom: 2px;
+		&:hover{
+			color: $white;
+			border-bottom: 2px solid $white;
+		}
 	}
 }
 nav{
