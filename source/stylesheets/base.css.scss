@@ -4,7 +4,7 @@
 
 body{ 
 	background: $background;
-	margin-top: 88px;
+	border-top: 88px solid $red;
 }
 
 a{
@@ -41,6 +41,9 @@ nav{
 		max-width: 1200px;
 		margin: 0 auto;
 		padding: 20px 60px;
+		height: 88px;
+		overflow: hidden;
+		box-sizing: border-box;
 	}
 	a.logo{
 		float: left;
@@ -50,11 +53,10 @@ nav{
 		}
 	}
 	p{
-		margin: 13px 0 0 20px;
+		margin: 11px 0 0 20px;
 		float: left;
-		color: $white;
+		color: $red-muted;
 		font-size: 16px;
-		opacity: .4;
 	}
 	ul{
 		text-align: right;
