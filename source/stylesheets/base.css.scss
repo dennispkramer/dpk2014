@@ -156,6 +156,20 @@ nav{
 			background: url("/images/general/d-index.jpg") no-repeat center;
 		}
 	}
+
+	@media (max-width: 880px) {
+		.lead, .description, .feature{
+			@include span(1);
+		}
+		.lead, .description{
+			padding: 60px;
+		}
+		#gallery{
+			.a, .b, .c, .d{
+				@include span(1/2);
+			}
+		}
+	}
 }
 .container{
 	max-width: 1200px;
