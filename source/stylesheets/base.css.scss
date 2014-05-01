@@ -167,10 +167,20 @@ nav{
 		.lead{
 			min-height: 0 !important;
 		}
+		.feature{
+			max-height: 300px;
+		}
 		#gallery{
 			.a, .b, .c, .d{
 				@include span(1/2);
+				height: 200%;
 			}
+		}
+	}
+	@media (max-width: 630px) {
+		.lead{
+			font-size: 28px;
+			line-height: 38px;
 		}
 	}
 }
