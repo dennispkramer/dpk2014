@@ -164,6 +164,9 @@ nav{
 		.lead, .description{
 			padding: 60px;
 		}
+		.lead{
+			min-height: 0 !important;
+		}
 		#gallery{
 			.a, .b, .c, .d{
 				@include span(1/2);
