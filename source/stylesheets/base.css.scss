@@ -64,11 +64,6 @@ nav{
 		color: $red-muted;
 		font-size: 16px;
 	}
-	@media (max-width: 690px) {
-		p{
-			display: none;
-		}
-	}
 	ul{
 		text-align: right;
 		li{
@@ -83,6 +78,15 @@ nav{
 			&:first-child{
 				margin-left: 0;
 			}
+		}
+	}
+	@media (max-width: 690px) {
+		.nav-container{
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		p{
+			display: none;
 		}
 	}
 }
@@ -180,6 +184,11 @@ nav{
 				@include span(1/2);
 				height: 200%;
 			}
+		}
+	}
+	@media (max-width: 690px) {
+		.lead{
+			padding: 30px;
 		}
 	}
 	@media (max-width: 630px) {
@@ -324,5 +333,11 @@ nav{
 				opacity: .4;
 			}
 		}
+	}
+}
+@media (max-width: 690px) {
+	.container{
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 }
