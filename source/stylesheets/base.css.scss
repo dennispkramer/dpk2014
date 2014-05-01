@@ -144,25 +144,10 @@ nav{
 	.feature{
 		background: url("/images/general/feature-index.jpg") no-repeat center;
 	}
-	#gallery{
-		width: 100%;
-		display: inline-block;
-		margin-bottom: -4px;
-		.a, .b, .c, .d{
-			@include span(1/4);
-			height: 100%;
-		}
-		.a{
-			background: url("/images/general/a-index.jpg") no-repeat center;
-		}
-		.b{
-			background: url("/images/general/b-index.jpg") no-repeat center;
-		}
-		.c{
-			background: url("/images/general/c-index.jpg") no-repeat center;
-		}
-		.d{
-			background: url("/images/general/d-index.jpg") no-repeat center;
+	.gallery{
+		img{
+			width: 25%;
+			margin: 0 -4px -4px 0;
 		}
 	}
 
@@ -179,10 +164,9 @@ nav{
 		.feature{
 			max-height: 300px;
 		}
-		#gallery{
-			.a, .b, .c, .d{
-				@include span(1/2);
-				height: 200%;
+		.gallery{
+			img{
+				width: 50%;
 			}
 		}
 	}
