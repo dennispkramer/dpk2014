@@ -3,20 +3,102 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="43px" height="51px" viewBox="0 0 43 51" enable-background="new 0 0 43 51" xml:space="preserve">
-<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-	M27.016,21.003h14.143c0-3.905-1.582-7.439-4.142-9.999L27.016,21.003z"/>
-<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-	M39.017,9.004c-3.072-3.071-7.314-4.971-12.001-4.971v16.97L39.017,9.004z"/>
-<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-	M13.018,7.004l13.998,13.999V1.206C21.549,1.206,16.6,3.421,13.018,7.004z"/>
-<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-	M27.016,21.003L11.018,5.004C6.923,9.099,4.39,14.755,4.39,21.003H27.016z"/>
-<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-	M27.016,21.003H1.562c0,7.028,2.849,13.396,7.456,17.999L27.016,21.003z"/>
-<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-	M27.016,21.003L7.018,41.002c5.118,5.119,12.189,8.285,19.998,8.285V21.003z"/>
-<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-	M27.004,21.003l8.301,8.301c2.291-2.292,3.438-5.295,3.438-8.299L27.004,21.003z"/>
-<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-	M27.004,21.003v9.743c2.689,0,5.125-1.09,6.888-2.854L27.004,21.003z"/>
+
+<!-- SMALLEST TO LARGEST -->
+<path fill="#F76464" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M27.004,21.003v9.743c2.689,0,5.125-1.09,6.889-2.854L27.004,21.003z">
+	<animateTransform 
+		attributeName="transform"
+		type="rotate"
+    from="0 26.1 25.1"
+    to="-360 26.1 25.1"
+    begin="0"
+    dur="1s"
+    repeatDur="indefinite"
+	/>
+</path>
+<path fill="#F76464" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M27.004,21.003l8.301,8.302c2.291-2.293,3.438-5.296,3.438-8.3L27.004,21.003z">
+	<animateTransform 
+		attributeName="transform"
+		type="rotate"
+    from="0 26.1 25.1"
+    to="-360 26.1 25.1"
+    begin=".125s"
+    dur="1s"
+    repeatDur="indefinite"
+	/>
+</path>
+<path fill="#F76464" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M27.016,21.003h14.144c0-3.905-1.582-7.439-4.142-9.999L27.016,21.003z">
+	<animateTransform 
+		attributeName="transform"
+		type="rotate"
+    from="0 26.1 25.1"
+    to="-360 26.1 25.1"
+    begin=".25s"
+    dur="1s"
+    repeatDur="indefinite"
+	/>
+</path>
+<path fill="#F76464" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M39.018,9.004c-3.072-3.071-7.314-4.971-12.002-4.971v16.97L39.018,9.004z">
+	<animateTransform 
+		attributeName="transform"
+		type="rotate"
+    from="0 26.1 25.1"
+    to="-360 26.1 25.1"
+    begin=".375s"
+    dur="1s"
+    repeatDur="indefinite"
+	/>
+</path>
+<path fill="#F76464" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M13.018,7.004l13.998,13.999V1.206C21.549,1.206,16.6,3.421,13.018,7.004z">
+	<animateTransform 
+		attributeName="transform"
+		type="rotate"
+    from="0 26.1 25.1"
+    to="-360 26.1 25.1"
+    begin=".5s"
+    dur="1s"
+    repeatDur="indefinite"
+	/>
+</path>
+<path fill="#F76464" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M27.016,21.003L11.018,5.004C6.923,9.099,4.39,14.755,4.39,21.003H27.016z">
+	<animateTransform 
+		attributeName="transform"
+		type="rotate"
+    from="0 26.1 25.1"
+    to="-360 26.1 25.1"
+    begin=".625s"
+    dur="1s"
+    repeatDur="indefinite"
+	/>
+</path>
+<path fill="#F76464" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M27.016,21.003H1.562c0,7.028,2.849,13.396,7.456,17.999L27.016,21.003z">
+	<animateTransform 
+		attributeName="transform"
+		type="rotate"
+    from="0 26.1 25.1"
+    to="-360 26.1 25.1"
+    begin=".75s"
+    dur="1s"
+    repeatDur="indefinite"
+	/>
+</path>
+<path fill="#F76464" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M27.016,21.003L7.018,41.002c5.118,5.119,12.189,8.285,19.998,8.285V21.003z">
+	<animateTransform 
+		attributeName="transform"
+		type="rotate"
+    from="0 26.1 25.1"
+    to="-360 26.1 25.1"
+    begin=".8s"
+    dur="1s"
+    repeatDur="indefinite"
+	/>
+</path>
 </svg>
