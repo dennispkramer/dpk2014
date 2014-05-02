@@ -52,14 +52,14 @@ nav{
 		box-sizing: border-box;
 	}
 	a.logo{
+		margin-top: -10px;
 		float: left;
 		&:hover{
-			opacity: .6;
 			border-bottom: none;
 		}
 	}
 	p{
-		margin: 11px 0 0 20px;
+		margin: 11px 0 0 3px;
 		float: left;
 		color: $red-muted;
 		font-size: 16px;
