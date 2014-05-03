@@ -7,8 +7,7 @@
 	M30,30.157V39.9c2.689,0,5.125-1.09,6.889-2.854L30,30.157z">
 		<animateTransform  
 			fill="freeze" 
-			type="rotate" 
-			repeatDur="1" 
+			type="rotate"  
 			to="360 30 30" 
 			accumulate="none" 
 			attributeName="transform" 
@@ -24,8 +23,7 @@
 	M30,30.157l8.301,8.303c2.291-2.293,3.438-5.297,3.438-8.301L30,30.157z">
 		<animateTransform  
 			fill="freeze" 
-			type="rotate" 
-			repeatDur="1" 
+			type="rotate"  
 			to="360 30 30" 
 			accumulate="none" 
 			attributeName="transform" 
@@ -41,8 +39,7 @@
 	M30.012,30.157h14.145c0-3.905-1.582-7.439-4.143-9.999L30.012,30.157z">
 		<animateTransform  
 			fill="freeze" 
-			type="rotate" 
-			repeatDur="1" 
+			type="rotate"  
 			to="360 30 30" 
 			accumulate="none" 
 			attributeName="transform" 
@@ -58,8 +55,7 @@
 	M42.014,18.158c-3.072-3.071-7.313-4.971-12.002-4.971v16.97L42.014,18.158z">
 		<animateTransform  
 			fill="freeze" 
-			type="rotate" 
-			repeatDur="1" 
+			type="rotate"  
 			to="360 30 30" 
 			accumulate="none" 
 			attributeName="transform" 
@@ -75,8 +71,7 @@
 	M16.014,16.158l13.998,13.999V10.36C24.545,10.36,19.596,12.575,16.014,16.158z">
 		<animateTransform  
 			fill="freeze" 
-			type="rotate" 
-			repeatDur="1" 
+			type="rotate"  
 			to="360 30 30" 
 			accumulate="none" 
 			attributeName="transform" 
@@ -92,8 +87,7 @@
 	M30.012,30.157L14.014,14.158c-4.095,4.095-6.628,9.751-6.628,15.999H30.012z">
 		<animateTransform  
 			fill="freeze" 
-			type="rotate" 
-			repeatDur="1" 
+			type="rotate"  
 			to="360 30 30" 
 			accumulate="none" 
 			attributeName="transform" 
@@ -109,8 +103,7 @@
 	M30.012,30.157H4.558c0,7.028,2.849,13.396,7.456,17.999L30.012,30.157z">
 		<animateTransform  
 			fill="freeze" 
-			type="rotate" 
-			repeatDur="1" 
+			type="rotate"  
 			to="360 30 30" 
 			accumulate="none" 
 			attributeName="transform" 
@@ -126,15 +119,14 @@
 	M30.012,30.157L10.014,50.156c5.118,5.119,12.189,8.285,19.998,8.285V30.157z">
 		<animateTransform  
 			fill="freeze" 
-			type="rotate" 
-			repeatDur="1" 
+			type="rotate"  
 			to="360 30 30" 
 			accumulate="none" 
 			attributeName="transform" 
 			dur="1s" 
 			begin="0" 
 			calcMode="linear" 
-			from="0 30 30" 
+			from="0 30 30"
 			additive="replace" 
 			restart="always">
 		</animateTransform>
