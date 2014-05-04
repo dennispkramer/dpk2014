@@ -89,6 +89,13 @@ nav{
 			display: none;
 		}
 	}
+	@media (max-width: 400px) {
+		ul{
+			li{
+				margin-left: 25px;
+			}
+		}
+	}
 }
 .background-contact{
 	background: url("/images/general/background-contact.jpg") no-repeat top center;
@@ -359,6 +366,24 @@ nav{
 				font-size: 24px;
 				line-height: 36px;
 			}
+		}
+	}
+}
+@media (max-width: 400px) {
+	.container{
+		.contact{
+			background: transparent;
+			padding: 0;
+			.lead{
+				font-size: 20px;
+				line-height: 30px;
+			}
+			&:before, &:after{
+				display: none;
+			}
+		}
+		ul.social{
+			margin-top: 30px;
 		}
 	}
 }
