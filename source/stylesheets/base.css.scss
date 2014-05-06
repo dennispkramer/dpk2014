@@ -43,7 +43,11 @@ nav{
 	right: 0;
 	z-index: 100;
 	background: $red;
-	opacity: .95;
+	opacity: .87;
+	@include transition(0.2s);
+	&:hover{
+		opacity: 1;
+	}
 	.nav-container{
 		max-width: 1200px;
 		margin: 0 auto;
