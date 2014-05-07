@@ -314,7 +314,7 @@ nav{
 	}
 	ul.social{
 		text-align: center;
-		margin-top: 124px;
+		margin: 124px 0;
 		li{
 			margin-left: 40px;
 			a{
@@ -419,6 +419,13 @@ footer{
 			li{
 				margin-left: 10px;
 			}
+		}
+	}
+}
+@media (max-width: 690px) {
+	footer{
+		.footer-container{
+			padding: 10px 30px;
 		}
 	}
 }
