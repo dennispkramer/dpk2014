@@ -30,13 +30,9 @@ jQuery(document).ready(function() {
     var duration = 500;
     jQuery(window).scroll(function() {
         if (jQuery(this).scrollTop() > offset) {
-            jQuery('#toTop').css({ opacity: 1 });
-            jQuery('#toTop').fadeIn(duration);
-            jQuery('#logo').fadeOut(duration);
+            jQuery('#toTop').css({ bottom: 0 });
         } else {
-            jQuery('#toTop').css({ opacity: 0 });
-            jQuery('#toTop').fadeOut(duration);
-            jQuery('#logo').fadeIn(duration);
+            jQuery('#toTop').css({ bottom: -60 });
         }
     });
     
