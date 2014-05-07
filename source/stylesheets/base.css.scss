@@ -57,7 +57,7 @@ nav{
 		overflow: hidden;
 		box-sizing: border-box;
 	}
-	a#logo, a#toTop{
+	a#logo, #toTop{
 		position: absolute;
 		left: 60px;
 		&:hover{
@@ -67,7 +67,7 @@ nav{
 	a#logo{
 		top: 9px;
 	}
-	a#toTop{
+	#toTop{
 		cursor: pointer;
 		opacity: 0;
 		top: 13px;

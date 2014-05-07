@@ -26,7 +26,7 @@ function leadHeight(elem1, elem2, elem3) {
 // Scroll and reveal toTop
 
 jQuery(document).ready(function() {
-    var offset = 220;
+    var offset = 200;
     var duration = 500;
     jQuery(window).scroll(function() {
         if (jQuery(this).scrollTop() > offset) {
