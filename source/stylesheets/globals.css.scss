@@ -12,6 +12,12 @@ $tan-muted:         #c0a693;
 // Fonts
 $serif: "Calendas Plus", georgia, times, serif;
 $sans-serif: "DIN", arial, sans-serif;
+.serif{
+  font-family: $serif;
+}
+.sans-serif{
+  font-family: $sans-serif;
+}
 
 // Font weights
 $light: 100;
