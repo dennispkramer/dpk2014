@@ -49,6 +49,7 @@ nav{
 		opacity: 1;
 	}
 	.nav-container{
+		position: relative;
 		max-width: 1200px;
 		margin: 0 auto;
 		padding: 20px 60px;
@@ -56,15 +57,31 @@ nav{
 		overflow: hidden;
 		box-sizing: border-box;
 	}
-	a#logo{
-		margin-top: -12px;
-		float: left;
+	a#logo, a#toTop{
+		position: absolute;
+		left: 60px;
 		&:hover{
 			border-bottom: none;
 		}
 	}
+	a#logo{
+		top: 9px;
+	}
+	a#toTop{
+		cursor: pointer;
+		opacity: 0;
+		top: 13px;
+		.path{
+		  stroke-dasharray: 65;
+		  stroke-dashoffset: 0;
+		  @include transition(1s linear);
+		}
+		&:hover .path{
+			stroke-dashoffset: 130;
+	  }
+	}
 	p{
-		margin: 11px 0 0 3px;
+		margin: 11px 0 0 60px;
 		float: left;
 		color: $red-muted;
 		font-size: 16px;

@@ -21,3 +21,28 @@ function leadHeight(elem1, elem2, elem3) {
   // sets height of element 3 equal to 2X the height of element 1
   elem3.css('min-height', doubleheight);
 }
+
+
+// Scroll and reveal toTop
+
+jQuery(document).ready(function() {
+    var offset = 220;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('#toTop').css({ opacity: 1 });
+            jQuery('#toTop').fadeIn(duration);
+            jQuery('#logo').fadeOut(duration);
+        } else {
+            jQuery('#toTop').css({ opacity: 0 });
+            jQuery('#toTop').fadeOut(duration);
+            jQuery('#logo').fadeIn(duration);
+        }
+    });
+    
+    jQuery('#toTop').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+});
