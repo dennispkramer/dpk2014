@@ -67,9 +67,9 @@ nav{
 	right: 0;
 	z-index: 100;
 	.nav-container{
-		max-width: 1200px;
+		max-width: 1080px;
 		margin: 0 auto;
-		padding: 0 60px;
+		padding: 0;
 		height: 80px;
 		overflow: hidden;
 		box-sizing: border-box;
@@ -106,8 +106,9 @@ nav{
 		}
 	}
 	ul{
-		text-align: right;
-		margin: 32px 0;
+		float: right;
+		padding: 32px 30px;
+		margin: 0;
 		li{
 			margin-left: 40px;
 			a{
@@ -125,8 +126,7 @@ nav{
 	}
 	@media (max-width: 710px) {
 		.nav-container{
-			padding-left: 0;
-			padding-right: 30px;
+			padding: 0;
 		}
 		a#logo:after{
 			display: none;
