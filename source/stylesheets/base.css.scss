@@ -139,6 +139,11 @@ nav{
 		}
 	}
 }
+@media (max-width: 710px) {
+	nav{
+		background: rgba($background, .9);
+	}
+}
 .background-contact{
 	background: url("/images/general/background-contact.jpg") no-repeat top center;
 	position: fixed;
