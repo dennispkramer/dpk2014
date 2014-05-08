@@ -60,6 +60,34 @@ p{
 		}
   }
 }
+.postPage{
+	position: fixed;
+	top: 50%;
+	margin-top: -20px;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	opacity: .5;
+	z-index: 200;
+	@include transition(0.2s);
+	.path{
+	  stroke-dasharray: 40;
+	  stroke-dashoffset: 0;
+	  @include transition(1s linear);
+	}
+	&:hover{
+		opacity: .7;
+		.path{
+			stroke-dashoffset: 80;
+		}
+  }
+}
+.postPageLeft{
+	left: 0;
+}
+.postPageRight{
+	right: 0;
+}
 nav{
 	position: fixed;
 	top: 0;
@@ -302,6 +330,82 @@ nav{
 		img{
 			width: 100%;
 			margin-top: 10px;
+		}
+	}
+	.blog{
+		display: inline-block;
+		list-style: none;
+		img{
+			width: 100%;
+			margin-top: 10px;
+		}
+		.text{
+			margin-top: 30px;
+		}
+		.date{
+			display: inline-block;
+			margin-top: 30px;
+		}
+		.sub-text{
+			font-family: $sans-serif;
+			font-size: 18px;
+			a{
+				color: $blue-muted;
+				border-bottom: none;
+				&:hover{
+					color: $white;
+					border-bottom: none;
+				}
+			}
+		}
+		a.sub-text{
+			font-family: $sans-serif;
+			font-size: 18px;
+			color: $blue-muted;
+			border-bottom: none;
+			&:hover{
+				color: $white;
+				border-bottom: none;
+			}
+		}
+		.post-blog{
+			&:after{
+				content: "";
+				background: url("/images/general/squiggle-long.png");
+				background: url("/images/general/squiggle-long.svg"), none;
+				background-repeat: no-repeat;
+				width: 122px;
+				height: 6px;
+				display: block;
+				margin: 80px auto;
+			}
+			&:last-child{
+				&:after{
+					display: none;
+				}
+			}
+		}
+	}
+	.pagination{
+		&:before{
+			content: "";
+			background: url("/images/general/squiggle-long.png");
+			background: url("/images/general/squiggle-long.svg"), none;
+			background-repeat: no-repeat;
+			width: 122px;
+			height: 6px;
+			display: block;
+			margin: 80px auto;
+		}
+		a.sub-text{
+			font-family: $sans-serif;
+			font-size: 18px;
+			color: $blue-muted;
+			border-bottom: none;
+			&:hover{
+				color: $white;
+				border-bottom: none;
+			}
 		}
 	}
 	.contact{

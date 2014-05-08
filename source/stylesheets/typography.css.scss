@@ -16,23 +16,11 @@ h1{
 
 h2{
 	font-family: $sans-serif;
-	font-size: 22px;
-	color: $blue-muted;
+	font-size: 28px;
+	line-height: 40px;
+	color: $white;
 	font-weight: $regular;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	text-align: center;
-
-	&:after{
-		content: "";
-		background: url("/images/general/squiggle.png");
-		background: url("/images/general/squiggle.svg"), none;
-		background-repeat: no-repeat;
-		width: 62px;
-		height: 6px;
-		display: block;
-		margin: 30px auto;
-	}
+	letter-spacing: 1px;
 }
 
 h3{
