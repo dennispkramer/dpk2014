@@ -66,11 +66,6 @@ nav{
 	left: 0;
 	right: 0;
 	z-index: 100;
-	opacity: .87;
-	@include transition(0.2s);
-	&:hover{
-		opacity: 1;
-	}
 	.nav-container{
 		max-width: 1360px;
 		margin: 0 auto;
@@ -84,6 +79,7 @@ nav{
 		position: relative;
 		background: $red;
 		padding: 6px 7px 10px 13px;
+		opacity: .87;
 		&:after{
 			content: "The digital studio of Dennis Kramer";
 			opacity: 0;
@@ -96,6 +92,7 @@ nav{
 			@include transition(0.9s);
 		}
 		&:hover{
+			opacity: 1;
 			border-bottom: none;
 			&:after{
 				opacity: 1;
@@ -147,7 +144,7 @@ nav{
 }
 .intro{
 	display: block;
-	margin-top: 88px;
+	margin-top: 80px;
 	.lead, .description, .feature{
 		@include span(1/2);
 	}
@@ -232,7 +229,7 @@ nav{
 }
 .container{
 	max-width: 1360px;
-	margin: 88px auto 0;
+	margin: 80px auto 0;
 	padding: 60px;
 	box-sizing: border-box;
 	.portfolio{
