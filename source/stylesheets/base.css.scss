@@ -4,7 +4,6 @@
 
 body{ 
 	background: $background;
-	border-top: 88px solid $red;
 	position: relative;
 }
 
@@ -67,32 +66,32 @@ nav{
 	left: 0;
 	right: 0;
 	z-index: 100;
-	background: $red;
 	opacity: .87;
 	@include transition(0.2s);
 	&:hover{
 		opacity: 1;
 	}
 	.nav-container{
-		max-width: 1200px;
+		max-width: 1360px;
 		margin: 0 auto;
-		padding: 20px 60px;
-		height: 88px;
+		padding: 0 60px;
+		height: 80px;
 		overflow: hidden;
 		box-sizing: border-box;
 	}
 	a#logo{
 		float: left;
-		margin-top: -11px;
 		position: relative;
+		background: $red;
+		padding: 6px 7px 10px 13px;
 		&:after{
 			content: "The digital studio of Dennis Kramer";
 			opacity: 0;
-			color: $red-muted;
+			color: $blue-muted;
 			font-size: 16px;
 			position: absolute;
-			left: 55px;
-			top: 30px;
+			left: 92px;
+			top: 33px;
 			width: 300px;
 			@include transition(0.9s);
 		}
@@ -106,6 +105,7 @@ nav{
 	}
 	ul{
 		text-align: right;
+		margin: 32px 0;
 		li{
 			margin-left: 40px;
 			a{
@@ -147,6 +147,7 @@ nav{
 }
 .intro{
 	display: block;
+	margin-top: 88px;
 	.lead, .description, .feature{
 		@include span(1/2);
 	}
@@ -230,8 +231,8 @@ nav{
 	}
 }
 .container{
-	max-width: 1200px;
-	margin: 0 auto;
+	max-width: 1360px;
+	margin: 88px auto 0;
 	padding: 60px;
 	box-sizing: border-box;
 	.portfolio{
@@ -439,7 +440,7 @@ footer{
 	bottom: 0;
 	.footer-container{
 		opacity: .5;
-		max-width: 1200px;
+		max-width: 1360px;
 		margin: 0 auto;
 		padding: 3px 60px;
 		height: 60px;
