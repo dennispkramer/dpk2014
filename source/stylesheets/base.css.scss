@@ -36,17 +36,22 @@ p{
 		}
 	}
 }
+.arrows{
+	position: fixed;
+	cursor: pointer;
+	z-index: 200;
+	opacity: .5;
+	&:hover{
+		opacity: .7;
+	}
+}
 #toTop{
 	background: $background;
-	position: fixed;
 	bottom: -60px;
 	left: 50%;
 	width: 60px;
 	height: 60px;
 	margin-left: -30px;
-	cursor: pointer;
-	opacity: .5;
-	z-index: 200;
 	@include transition(0.2s);
 	.path{
 	  stroke-dasharray: 65;
@@ -54,33 +59,16 @@ p{
 	  @include transition(1s linear);
 	}
 	&:hover{
-		opacity: .7;
 		.path{
 			stroke-dashoffset: 130;
 		}
   }
 }
 .postPage{
-	position: fixed;
 	top: 50%;
 	margin-top: -20px;
 	width: 40px;
 	height: 40px;
-	cursor: pointer;
-	opacity: .5;
-	z-index: 200;
-	@include transition(0.2s);
-	.path{
-	  stroke-dasharray: 40;
-	  stroke-dashoffset: 0;
-	  @include transition(1s linear);
-	}
-	&:hover{
-		opacity: .7;
-		.path{
-			stroke-dashoffset: 80;
-		}
-  }
 }
 .postPageLeft{
 	left: 0;
