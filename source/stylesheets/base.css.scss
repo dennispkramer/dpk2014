@@ -148,8 +148,9 @@ nav{
 			display: none;
 		}
 	}
-	@media (max-width: 400px) {
+	@media (max-width: 690px) {
 		ul{
+			padding: 32px 20px;
 			li{
 				margin-left: 25px;
 			}
@@ -200,10 +201,10 @@ nav{
 									url("/images/general/ornament-index/top-right.png"), 
 									url("/images/general/ornament-index/bot-left.png"), 
 									url("/images/general/ornament-index/bot-right.png");
-			background: url("/images/general/ornament-index/top-left.svg"), 
-									url("/images/general/ornament-index/top-right.svg"), 
-									url("/images/general/ornament-index/bot-left.svg"), 
-									url("/images/general/ornament-index/bot-right.svg"), none;
+			// background: url("/images/general/ornament-index/top-left.svg"), 
+			// 						url("/images/general/ornament-index/top-right.svg"), 
+			// 						url("/images/general/ornament-index/bot-left.svg"), 
+			// 						url("/images/general/ornament-index/bot-right.svg"), none;
 			background-position:  left top 11px,
 														right top 11px,
 														left bottom 11px,
@@ -243,13 +244,16 @@ nav{
 	}
 	@media (max-width: 690px) {
 		.lead{
-			padding: 30px;
-		}
-	}
-	@media (max-width: 630px) {
-		.lead{
+			padding: 20px;
 			font-size: 28px;
 			line-height: 38px;
+		}
+		.description{
+			padding: 50px;
+			.inner{
+				margin: -41px -30px;
+				padding: 41px 30px;
+			}
 		}
 	}
 }
@@ -271,7 +275,7 @@ nav{
 		&:before{
 			content: "";
 			background: url("/images/general/squiggle-long.png");
-			background: url("/images/general/squiggle-long.svg"), none;
+			// background: url("/images/general/squiggle-long.svg"), none;
 			background-repeat: no-repeat;
 			width: 122px;
 			height: 6px;
@@ -303,7 +307,7 @@ nav{
 				&:before{
 					content: "";
 					background: url("/images/general/squiggle.png");
-					background: url("/images/general/squiggle.svg"), none;
+					// background: url("/images/general/squiggle.svg"), none;
 					background-repeat: no-repeat;
 					width: 62px;
 					height: 6px;
@@ -360,7 +364,7 @@ nav{
 			&:after{
 				content: "";
 				background: url("/images/general/squiggle-long.png");
-				background: url("/images/general/squiggle-long.svg"), none;
+				// background: url("/images/general/squiggle-long.svg"), none;
 				background-repeat: no-repeat;
 				width: 122px;
 				height: 6px;
@@ -378,7 +382,7 @@ nav{
 		&:before{
 			content: "";
 			background: url("/images/general/squiggle-long.png");
-			background: url("/images/general/squiggle-long.svg"), none;
+			// background: url("/images/general/squiggle-long.svg"), none;
 			background-repeat: no-repeat;
 			width: 122px;
 			height: 6px;
@@ -412,12 +416,12 @@ nav{
 								url("/images/general/ornament-contact/bot-left.png"), 
 								url("/images/general/ornament-contact/center.png"), 
 								url("/images/general/ornament-contact/bot-right.png");
-		background: url("/images/general/ornament-contact/top-left.svg"), 
-								url("/images/general/ornament-contact/center.svg"), 
-								url("/images/general/ornament-contact/top-right.svg"), 
-								url("/images/general/ornament-contact/bot-left.svg"), 
-								url("/images/general/ornament-contact/center.svg"), 
-								url("/images/general/ornament-contact/bot-right.svg"), none;
+		// background: url("/images/general/ornament-contact/top-left.svg"), 
+		// 						url("/images/general/ornament-contact/center.svg"), 
+		// 						url("/images/general/ornament-contact/top-right.svg"), 
+		// 						url("/images/general/ornament-contact/bot-left.svg"), 
+		// 						url("/images/general/ornament-contact/center.svg"), 
+		// 						url("/images/general/ornament-contact/bot-right.svg"), none;
 		background-position:  left top 11px,
 													center top,
 													right top 11px,
@@ -486,7 +490,7 @@ ul.social{
 }
 @media (max-width: 690px) {
 	.container{
-		padding: 30px;
+		padding: 20px;
 		.portfolio{
 			.lead, .description{
 				@include col(1);
@@ -504,7 +508,7 @@ ul.social{
 	.container{
 		.contact{
 			background: url("/images/general/ornament-contact/center.png");	
-			background: url("/images/general/ornament-contact/center.svg"), none;
+			// background: url("/images/general/ornament-contact/center.svg"), none;
 			background-position:  center bottom;
 			background-repeat: no-repeat;
 			padding: 0 0 81px;
