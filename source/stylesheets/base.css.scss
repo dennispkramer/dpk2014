@@ -89,6 +89,7 @@ nav{
 		height: 80px;
 		overflow: hidden;
 		box-sizing: border-box;
+		-moz-box-sizing: border-box;
 	}
 	a#logo{
 		float: left;
@@ -179,6 +180,7 @@ nav{
 	.lead, .description{
 		margin: 0;
 		box-sizing: border-box;
+		-moz-box-sizing: border-box;
 		padding: 60px;
 	}
 	.lead{
@@ -262,6 +264,7 @@ nav{
 	margin: 80px auto 0;
 	padding: 60px;
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	.portfolio{
 		display: inline-block;
 		.lead{
@@ -549,6 +552,7 @@ footer{
 		height: 60px;
 		overflow: hidden;
 		box-sizing: border-box;
+		-moz-box-sizing: border-box;
 		p{
 			font-size: 16px;
 			margin-top: 14px;
