@@ -32,6 +32,16 @@ $bold: 600;
   float: right !important;
 }
 
+// Text Selection Colors
+::selection {
+  background: $blue-highlight;
+  color: $white;
+  }
+::-moz-selection {
+  background: $blue-highlight;
+  color: $white;
+}
+
 // Image Cover
 .cover{
   -webkit-background-size: cover !important;
