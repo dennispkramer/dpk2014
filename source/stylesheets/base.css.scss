@@ -327,6 +327,18 @@ nav{
 			margin-top: 10px;
 		}
 	}
+	@media (max-width: 1080px) {
+		.portfolio-images{
+			margin-left: -60px;
+			margin-right: -60px;
+		}
+	}
+	@media (max-width: 690px) {
+		.portfolio-images{
+			margin-left: -30px;
+			margin-right: -30px;
+		}
+	}
 	.blog{
 		display: inline-block;
 		list-style: none;
